@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=DotGothic16&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=2">
 </head>
 <body>
 <main class="app">
@@ -32,17 +32,20 @@
     </header>
     <div class="license" id="license"></div>
     <ol class="fx-grid" id="fixtures"></ol>
-    <button class="btn-y push" id="cta" data-act="intro" data-v="0">第1節からはじめる</button>
+    <div class="home-actions">
+    <button class="btn-y" id="cta" data-act="intro" data-v="0">第1節からはじめる</button>
     <div class="home-bottom">
       <button class="book-row" data-act="book" id="bookRow"></button>
       <button class="toggle" data-act="sound" id="soundBtn">笛の音<br>オフ</button>
     </div>
     <p class="foot">2026/27 サッカー競技規則（IFAB・JFA）に基づく内容です。</p>
+    </div>
   </section>
 
   <!-- INTRO -->
   <section id="v-intro" class="view" hidden>
     <button class="back" data-act="home">← 日程に戻る</button>
+    <div class="mid">
     <div class="intro-head">
       <p class="eyebrow" id="inNo"></p>
       <h2 id="inTitle"></h2>
@@ -50,7 +53,8 @@
     </div>
     <div class="points"><h3>この節のポイント</h3><ul id="inPoints"></ul></div>
     <p class="meta" id="inMeta"></p>
-    <button class="btn-y push" data-act="start">キックオフ</button>
+    </div>
+    <button class="btn-y" data-act="start">キックオフ</button>
   </section>
 
   <!-- PLAY -->
@@ -71,6 +75,7 @@
 
   <!-- RESULT -->
   <section id="v-result" class="view" hidden>
+    <div class="mid">
     <div class="res-top">
       <p class="whistle-txt">ピッ、ピッ、ピーーッ</p>
       <h2>試合終了</h2>
@@ -80,7 +85,8 @@
     <div class="res-stars" id="resStars"></div>
     <div id="promo" hidden class="promo"></div>
     <ul class="review" id="review"></ul>
-    <div class="btn-row push">
+    </div>
+    <div class="btn-row">
       <button class="btn-ghost" data-act="retry">もう一度</button>
       <button class="btn-ghost" data-act="home">日程へ</button>
     </div>
@@ -99,8 +105,8 @@
     <div class="book-ch" id="bookList" role="tabpanel"></div>
   </section>
 </main>
-<script src="js/questions.js"></script>
-<script src="js/scene.js"></script>
-<script src="js/app.js"></script>
+<script src="js/questions.js?v=2"></script>
+<script src="js/scene.js?v=2"></script>
+<script src="js/app.js?v=2"></script>
 </body>
 </html>

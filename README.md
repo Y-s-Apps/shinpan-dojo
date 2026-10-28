@@ -75,6 +75,8 @@ node tools/validate.js   # 書き間違いのチェック
 python3 -m http.server   # http://localhost:8000 で表示を確認
 ```
 
+CSSやJSを変えたら、`index.html` の `?v=2` の数字を1つ上げてください（古いファイルがスマホに残るのを防ぎます）。
+
 場面の数を変えたときは、`index.html` の `description` と、`tools/make_icons.py` のプレビュー画像の文言も合わせて直してください（トップ画面の数字は自動で変わります）。
 
 ## ルールの出典

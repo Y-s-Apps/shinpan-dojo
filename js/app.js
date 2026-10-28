@@ -90,7 +90,7 @@ function renderHome(){
     var b=P.best[c.id];
     html+='<li><button class="fx'+(i===ni?' next':'')+'" data-act="intro" data-v="'+i+'">'+
       '<span class="fx-top"><span class="fx-no">第'+(i+1)+'節</span>'+(i===ni?'<span class="tag">次はここ</span>':'<span class="stars" aria-label="星'+(b||0)+'つ">'+starsHtml(b||0)+'</span>')+'</span>'+
-      '<b>'+esc(c.title)+'</b><small>'+esc(c.meta)+'</small></button></li>';
+      '<span class="fx-body"><b>'+esc(c.title)+'</b><small>'+esc(c.meta)+'</small></span></button></li>';
   });
   $('fixtures').innerHTML=html;
 
